@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>AFPics</title>
+    <link rel="icon" href="images.jpg">
+    <link href="styles.css" rel="stylesheet">
+    <style type="text/css">
+    img:hover{
+        cursor: pointer;
+    }
+    body{
+        background-image: url("images.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+    .container{
+        background-color: rgba(0,0,0,0.4);
+        color: white;
+    }
+
+    .footer{
+        width: 100%;
+        height: 30px;
+        background-color: rgb(30,30,30);
+        color: rgb(230,230,230);
+    }
+
+    #thumbnail{
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+
+    #footer:hover{
+        cursor: pointer;
+
+    }
+  
+</style>
+</head>
+<body>
+    <br>
+        <div class="container" >
+            <center>
+                <h1 style="color: rgb(230,230,230);">Anirudh Freelancing Photography</h1>
+                <a href="#bottom"><img src="dp.jpg" style="opacity: 1;"></a>
+            </center>
+
+            <br><br><br>
+
+
+            <center>
+            <div class="col-lg-3" id="thumbnail">
+                <br>
+                <img src="img1.jpg" style="height: 188px; width: 250px; border-radius: 30px;" onclick="form()">
+                <br><br>
+
+                <p>My first ever professional photograph where a ladybird is peaceful and obvlivious to it's surroundings in the Amazon forest.</p>
+            </div>
+            <div class="col-lg-3" id="thumbnail">
+                <br>
+                <img src="img2.jpg" style="height: 188px; width: 250px; border-radius: 30px;" onclick="form()">
+                <br><br>
+
+                <p>My most scariest click in which I had put in all my efforts to tame a tiger for over 6 months to get this perfect click in Greenland.</p>
+            </div>
+            <div class="col-lg-3" id="thumbnail">
+                <br>
+                <img src="img3.jpg" style="height: 188px; width: 250px; border-radius: 30px; " onclick="form()">
+                <br><br>
+
+                <p>A chess click which has a rather unusual philosophical meaning. The single white pawn is ready to fight alone to win symbolising his bravery. </p>
+            </div>
+            <div class="col-lg-3" id="thumbnail">
+                <br>
+                <img src="img4.jpg" style="height: 188px; width: 250px; border-radius: 30px; " onclick="form()">
+                <br><br>
+
+                <p>I had to dive underwater with a waterproof camera for this one and had to wait 4 hours to get this creature to the water surface for the click.</p>
+            </div>
+            <br><br>
+            </center>
+            <br><br>
+        </div>
+
+
+        <center>
+        <div class="container">
+        <div id="bottom" class="bottom" style="color: white; width: 70%;" >
+             <h4>My bio:</h4>
+             <p>I'm Anirudh, a freelancer photographer who is absolutely in love with photography. Do check out all my pictures above ans show some love and support for my page. I'm 19 and pursuing my B.Tech degree at NITT </p>
+        </div>
+        </div>
+        </center>
+        
+
+        <div id="footer" class="footer">
+               <center><h4 style=" padding-top: 5px;"> Phone number: 8754497524 | Email: anirudh1999@gmail.com</h4></center>
+        </div>
+
+    
+</body>
+
+<script type="text/javascript">
+    function form()
+    {
+        window.location="form.html";
+    }
+    document.getElementById("footer").onclick=function()
+    {
+      window.location="admin.php";
+    };
+</script>
+
+</html>

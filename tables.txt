@@ -1,0 +1,13 @@
+CREATE TABLE userlogin (
+name VARCHAR(40) NOT NULL,
+password VARCHAR(40) NOT NULL
+);
+
+INSERT INTO userlogin (name,password) VALUES('Anirudh','anirudh123'); 
+
+CREATE TABLE visitor (
+name VARCHAR(40) NOT NULL,
+email VARCHAR(60) NOT NULL,
+contact INT(10) NOT NULL,
+time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
